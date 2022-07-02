@@ -21,16 +21,17 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     list-style: none;
-}
 
-.footer-contact__item {
-    margin-bottom: 9px;
-}
 
-.footer-contact__link {
-    color: rgba(255, 255, 255, 0.6);
-    text-align: start;
-    text-decoration: none;
-    transition: var(--transition);
-    transition-property: color, background-color, box-shadow;
+    &__item {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-align: start;
+        text-decoration: none;
+        transition: var(--transition);
+        transition-property: color, background-color, box-shadow;
+    }
 }

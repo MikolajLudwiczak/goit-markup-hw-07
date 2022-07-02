@@ -8,11 +8,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-}
 
-.footer__container {
-    display: flex;
-    justify-content: start;
+    &__container {
+        display: flex;
+        justify-content: start;
+    }
 }
 
 .logo-footer {
@@ -24,8 +24,9 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     margin-top: 0;
+
+    &-link {
+            text-decoration: none;
+        }
 }
 
-.logo-footer--link {
-    text-decoration: none;
-}

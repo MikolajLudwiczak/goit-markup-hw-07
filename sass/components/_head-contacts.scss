@@ -7,38 +7,37 @@
     letter-spacing: 0.02em;
     list-style: none;
     text-decoration: none;
-}
 
-.header-contact__link {
-    color: #757575;
-    margin-right: 50px;
-    text-decoration: none;
+    &__link {
+        color: #757575;
+        margin-right: 50px;
+        text-decoration: none;
 
-    &:active, &:focus, &:hover {
-        color: var(--brand-main-color);
-        --color5: var(--brand-main-color);
+        &:active, &:focus, &:hover {
+            color: var(--brand-main-color);
+            --color5: var(--brand-main-color);
+        }
+            
+        &:active, &:focus, &:hover .header-contact__icon {
+            --color5: var(--brand-main-color);
+            color: var(--brand-main-color);
+        }
     }
+
+        &__icon {
+            fill: #afb1b8;
+            transition: var(--transition);
+            transition-property: fill;
         
-    &:active, &:focus, &:hover .header-contact__icon {
-        --color5: var(--brand-main-color);
-        color: var(--brand-main-color);
+
+        &-tel {
+            margin-right: 10px;
+            margin-bottom: -1px;
+        }
+
+        &-mailto {
+            margin-right: 10px;
+            margin-bottom: -3px;
+        }
     }
-}
-
-.header-contact__icon {
-    fill: #afb1b8;
-    transition: var(--transition);
-    transition-property: fill;
-
-    
-}
-
-.header-contact__icon--tel {
-    margin-right: 10px;
-    margin-bottom: -1px;
-}
-
-.header-contact__icon--mailto {
-    margin-right: 10px;
-    margin-bottom: -3px;
 }
